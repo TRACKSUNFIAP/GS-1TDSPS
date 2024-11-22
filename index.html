@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div id="logo">
+                <img src="./imagens/logo.png" alt="Logo" />
+                <h1>Track Sun</h1>
+            </div>
+        </header>
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="./visaoGeral/index.html" id="loginForm" onsubmit="return validarLogin()">
+                <label for="username" class="tituloLogin">Email:</label>
+                <input type="email" id="username" class="input-field" placeholder="Padrão: admin@admin"
+                    required>
+                <label for="password" class="tituloLogin">Senha:</label>
+                <input type="password" id="password" class="input-field" placeholder="Padrão: 1234"
+                    required>
+                <button type="submit" class="login-button">Entrar</button>
+            </form>
+            <div class="error-message" id="error-message"></div>
+        </div>
+
+        <script src="scripts.js"></script> <!-- Link para o arquivo JavaScript -->
+</body>
+
+</html>
